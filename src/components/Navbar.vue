@@ -80,7 +80,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style scoped>
 .active {
   background-color: #7c6a5e;
   transition: 0.5s;

@@ -25,5 +25,6 @@ export default {
 
   #app {
     font-family: "nunito";
+    color: #7c6a5e;
   }
 </style>
