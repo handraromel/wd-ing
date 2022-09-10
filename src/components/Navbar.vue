@@ -93,4 +93,14 @@ export default {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
+
+@media (max-width: 992px) {
+  .nav-link {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-top: 1em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}
 </style>
