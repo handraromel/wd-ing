@@ -1,0 +1,13 @@
+html {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+body {
+  overflow: auto !important;
+  height: 100% !important;
+  background: url(@/assets/img/header-bg.webp) center no-repeat;
+  background-size: cover;
+}
+body.modal-open {
+  padding-right: 0 !important;
+}

@@ -30,7 +30,5 @@ export default {
 #app {
   font-family: "nunito";
   color: #7c6a5e;
-  background: url(@/assets/img/header-bg.webp) center no-repeat;
-  background-size: cover;
 }
 </style>

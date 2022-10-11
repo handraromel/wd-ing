@@ -16,8 +16,12 @@
             <h1 class="fw-bold m-0">Lorem The Ipsum</h1>
             <h3 style="letter-spacing: 0.4em">Lorem &amp; Ipsum</h3>
           </div>
-          <a href="javascript:;" class="btn rounded-pill read-more"
-            >READ MORE</a
+          <a
+            href="javascript:;"
+            class="btn rounded-pill read-more"
+            data-bs-toggle="modal"
+            data-bs-target="#invitationModal"
+            >Read More</a
           >
           <div class="py-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non
@@ -66,8 +70,21 @@
         </div>
       </div>
     </div>
+    <FloatBtn />
+    <Invitation />
   </header>
 </template>
+
+<script>
+import FloatBtn from "./FloatBtn.vue";
+import Invitation from './Invitation.vue'
+export default {
+  components: {
+    FloatBtn,
+    Invitation,
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 $assetsPath: "@/assets/img";
