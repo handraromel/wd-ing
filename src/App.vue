@@ -18,15 +18,6 @@ export default {
 </template>
 
 <style scoped>
-@font-face {
-  font-family: "nunito";
-  src: url(@/assets/fonts/nunito.ttf);
-}
-@font-face {
-  font-family: "fajardo";
-  src: url(@/assets/fonts/fajardo.ttf);
-}
-
 #app {
   font-family: "nunito";
   color: #7c6a5e;

@@ -11,3 +11,40 @@ body {
 body.modal-open {
   padding-right: 0 !important;
 }
+
+@font-face {
+  font-family: "nunito";
+  src: url(@/assets/fonts/nunito.ttf);
+}
+@font-face {
+  font-family: "fajardo";
+  src: url(@/assets/fonts/fajardo.ttf);
+}
+@font-face {
+  font-family: "tangerine-reg";
+  src: url(@/assets/fonts/tangerine-reg.ttf);
+}
+@font-face {
+  font-family: "tangerine-bold";
+  src: url(@/assets/fonts/tangerine-bold.ttf);
+}
+@font-face {
+  font-family: "dancing";
+  src: url(@/assets/fonts/dancing.ttf);
+}
+
+.tangerine {
+  font-family: tangerine-reg;
+}
+.tangerine-b {
+  font-family: tangerine-bold;
+}
+.fajardo {
+  font-family: fajardo;
+}
+.nunito {
+  font-family: nunito;
+}
+.dancing {
+  font-family: dancing;
+}

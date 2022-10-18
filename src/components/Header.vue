@@ -3,32 +3,35 @@
     <div class="container pb-md-0">
       <div
         id="header-content"
-        class="row justify-content-center align-items-lg-center pt-5 pt-lg-0"
+        class="row justify-content-center align-items-lg-center pt-5"
       >
-        <div class="col-xl-6 text-center px-sm-5 px-3 pt-lg-5">
+        <div class="col-xl-6 text-center px-sm-5 px-3 pt-lg-0">
           <img
             class="img-fluid"
             src="@/assets/img/headec1.png"
             alt="Decoration 1"
             draggable="false"
           />
-          <div class="py-4">
-            <h1 class="fw-bold m-0">Lorem The Ipsum</h1>
-            <h3 style="letter-spacing: 0.4em">Lorem &amp; Ipsum</h3>
+          <div class="pt-4 pb-0">
+            <p class="fs-5 mb-1">Dear Mr. / Mrs. / Ms.</p>
+            <h1 class="dancing">{{ guestName }}</h1>
           </div>
-          <a
-            href="javascript:;"
-            class="btn rounded-pill read-more"
-            data-bs-toggle="modal"
-            data-bs-target="#invitationModal"
-            >Read More</a
-          >
-          <div class="py-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non
-            dignissim neque. Phasellus ullamcorper libero tellus, in aliquet
-            elit placerat interdum. Vivamus porttitor turpis neque, et porttitor
-            massa mollis non. Curabitur ac tincidunt nulla. Suspendisse finibus
-            eros ut felis eleifend, quis ultricies felis posuere.
+          <div class="py-3">
+            <p class="mb-1 fs-5">
+              We invite you to share in our joy and request <br />
+              your presence at the wedding of
+            </p>
+            <h1 class="pt-2 dancing couple-font" style="letter-spacing: 0.1em">
+              Annissa &amp; Handra
+            </h1>
+          </div>
+          <div class="pb-xl-0 pb-5">
+            <a
+              href="javascript:;"
+              class="btn rounded-pill read-more"
+              @click="openOverlay"
+              >Open Invitation</a
+            >
           </div>
         </div>
         <div class="col-xl-6 text-center position-relative px-5">
@@ -64,8 +67,8 @@
           </div>
         </div>
         <div class="col-xl-6 text-center pt-about">
-          <a href="javascript:;" style="color: inherit; font-family: fajardo">
-            <span class="fs-1">Tentang kami</span>
+          <a href="javascript:;" class="fajardo" style="color: inherit">
+            <span class="fs-1">About us</span>
           </a>
         </div>
       </div>
@@ -77,11 +80,24 @@
 
 <script>
 import FloatBtn from "./FloatBtn.vue";
-import Invitation from './Invitation.vue'
+import Invitation from "./Invitation.vue";
 export default {
+  data() {
+    return {
+      guestName: "",
+    };
+  },
   components: {
     FloatBtn,
     Invitation,
+  },
+  methods: {
+    openOverlay() {
+      document.getElementById("modalOverlay").style.width = "100%";
+    },
+  },
+  mounted() {
+    this.guestName = new URL(location.href).searchParams.get("guest");
   },
 };
 </script>
@@ -123,6 +139,10 @@ $buttonPadding: 0.4em 3em;
     #{$left-or-right}: $y;
     #{$img-width}: $width;
   }
+}
+
+.couple-font {
+  font-size: 4em;
 }
 
 @mixin headerHeight($height) {
