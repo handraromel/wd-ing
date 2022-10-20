@@ -32,6 +32,10 @@ body.modal-open {
   font-family: "dancing";
   src: url(@/assets/fonts/dancing.ttf);
 }
+@font-face {
+  font-family: "australia";
+  src: url(@/assets/fonts/australia.ttf);
+}
 
 .tangerine {
   font-family: tangerine-reg;
@@ -47,4 +51,7 @@ body.modal-open {
 }
 .dancing {
   font-family: dancing;
+}
+.australia {
+  font-family: australia;
 }
