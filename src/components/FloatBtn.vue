@@ -9,6 +9,9 @@
       <div class="floating-button">
         <i class="bi bi-gift-fill"></i>
       </div>
+      <!-- <div class="floating-text fajardo text-end">
+        Send gift
+      </div> -->
     </a>
   </div>
   <Gift />
@@ -31,6 +34,7 @@ export default {
   bottom: 0;
   right: 0;
   margin: 20px 35px;
+  z-index: 2;
 }
 
 .floating-container:hover .floating-button {
@@ -41,11 +45,19 @@ export default {
   transition: all 0.3s;
 }
 
+/* .floating-container .floating-text {
+  position: absolute;
+  bottom: 170%;
+  font-size: 1.7em;
+  line-height: .6em;
+  color: #7c6a5e;
+} */
+
 .floating-container .floating-button {
   position: absolute;
   width: 50px;
   height: 50px;
-  background: #2cb3f0;
+  background: #7c6a5e;
   bottom: 0;
   border-radius: 50%;
   left: 0;
@@ -56,7 +68,7 @@ export default {
   text-align: center;
   font-size: 23px;
   z-index: 100;
-  box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+  box-shadow: 0 10px 25px -5px #7c6a5e8c;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -67,7 +79,7 @@ export default {
 
 @-webkit-keyframes glowing {
   from {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px rgba(0, 255, 255, 0.452),
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px #7c6a5e8c,
       0 0 25px #e6007379, 0 0 30px #e600737a, 0 0 35px #e6007379;
   }
   to {
@@ -77,7 +89,7 @@ export default {
 }
 @-moz-keyframes glowing {
   from {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px rgba(0, 255, 255, 0.452),
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px #7c6a5e8c,
       0 0 25px #e6007379, 0 0 30px #e600737a, 0 0 35px #e6007379;
   }
   to {
@@ -87,7 +99,7 @@ export default {
 }
 @-o-keyframes glowing {
   from {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px rgba(0, 255, 255, 0.452),
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px #7c6a5e8c,
       0 0 25px #e6007379, 0 0 30px #e600737a, 0 0 35px #e6007379;
   }
   to {
@@ -97,7 +109,7 @@ export default {
 }
 @keyframes glowing {
   from {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px rgba(0, 255, 255, 0.452),
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px #7c6a5e8c,
       0 0 25px #e6007379, 0 0 30px #e600737a, 0 0 35px #e6007379;
   }
   to {
