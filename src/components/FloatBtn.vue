@@ -38,7 +38,7 @@ export default {
 }
 
 .floating-container:hover .floating-button {
-  box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+  box-shadow: 0 10px 25px #876f7fbe;
   -webkit-transform: translatey(5px);
   transform: translatey(5px);
   -webkit-transition: all 0.3s;
@@ -79,42 +79,42 @@ export default {
 
 @-webkit-keyframes glowing {
   from {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px #7c6a5e8c,
-      0 0 25px #e6007379, 0 0 30px #e600737a, 0 0 35px #e6007379;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px #876f7f, 0 0 20px #7c6a5e8c,
+      0 0 25px #876f7f, 0 0 30px #876f7f, 0 0 35px #876f7f;
   }
   to {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px #ff4da683, 0 0 20px #ff4da681,
-      0 0 25px #ff4da68a, 0 0 30px #ff4da68a, 0 0 35px #ff4da688, 0 0 40 rgba(255, 77, 166, 0.527);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px #876f7f, 0 0 20px #876f7f,
+      0 0 25px #876f7f, 0 0 30px #876f7f, 0 0 35px #876f7f, 0 0 40 #876f7f;
   }
 }
 @-moz-keyframes glowing {
   from {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px #7c6a5e8c,
-      0 0 25px #e6007379, 0 0 30px #e600737a, 0 0 35px #e6007379;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px #876f7f, 0 0 20px #7c6a5e8c,
+      0 0 25px #876f7f, 0 0 30px #876f7f, 0 0 35px #876f7f;
   }
   to {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px #ff4da683, 0 0 20px #ff4da681,
-      0 0 25px #ff4da68a, 0 0 30px #ff4da68a, 0 0 35px #ff4da688, 0 0 40 rgba(255, 77, 166, 0.527);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px #876f7f, 0 0 20px #876f7f,
+      0 0 25px #876f7f, 0 0 30px #876f7f, 0 0 35px #876f7f, 0 0 40 #876f7f;
   }
 }
 @-o-keyframes glowing {
   from {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px #7c6a5e8c,
-      0 0 25px #e6007379, 0 0 30px #e600737a, 0 0 35px #e6007379;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px #876f7f, 0 0 20px #7c6a5e8c,
+      0 0 25px #876f7f, 0 0 30px #876f7f, 0 0 35px #876f7f;
   }
   to {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px #ff4da683, 0 0 20px #ff4da681,
-      0 0 25px #ff4da68a, 0 0 30px #ff4da68a, 0 0 35px #ff4da688, 0 0 40 rgba(255, 77, 166, 0.527);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px #876f7f, 0 0 20px #876f7f,
+      0 0 25px #876f7f, 0 0 30px #876f7f, 0 0 35px #876f7f, 0 0 40 #876f7f;
   }
 }
 @keyframes glowing {
   from {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.466), 0 0 20px #7c6a5e8c,
-      0 0 25px #e6007379, 0 0 30px #e600737a, 0 0 35px #e6007379;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px #876f7f, 0 0 20px #7c6a5e8c,
+      0 0 25px #876f7f, 0 0 30px #876f7f, 0 0 35px #876f7f;
   }
   to {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px #ff4da683, 0 0 20px #ff4da681,
-      0 0 25px #ff4da68a, 0 0 30px #ff4da68a, 0 0 35px #ff4da688, 0 0 40 rgba(255, 77, 166, 0.527);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px #876f7f, 0 0 20px #876f7f,
+      0 0 25px #876f7f, 0 0 30px #876f7f, 0 0 35px #876f7f, 0 0 40 #876f7f;
   }
 }
 

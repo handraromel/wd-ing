@@ -37,7 +37,7 @@
         <div class="col-xl-6 text-center position-relative px-5">
           <img
             class="img-fluid"
-            src="@/assets/img/sample.webp"
+            src="@/assets/img/mainfront.webp"
             alt="Sample Photo"
             draggable="false"
           />
@@ -67,24 +67,33 @@
           </div>
         </div>
         <div class="col-xl-6 text-center pt-about">
-          <a href="javascript:;" class="fajardo" style="color: inherit">
+          <a
+            href="javascript:;"
+            @click="openFancyBox"
+            class="fajardo"
+            style="color: inherit"
+          >
             <span class="fs-1">About us</span>
           </a>
         </div>
       </div>
     </div>
     <FloatBtn />
-    <Invitation />
+    <Invitation :showed="show" />
   </header>
 </template>
 
 <script>
 import FloatBtn from "./FloatBtn.vue";
 import Invitation from "./Invitation.vue";
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox.css";
+
 export default {
   data() {
     return {
       guestName: "",
+      show: false,
     };
   },
   components: {
@@ -94,6 +103,23 @@ export default {
   methods: {
     openOverlay() {
       document.getElementById("modalOverlay").style.width = "100%";
+      this.show = true;
+    },
+    openFancyBox() {
+      Fancybox.show([
+        { src: "src/assets/img/1.jpg", type: "image" },
+        { src: "src/assets/img/2.jpg", type: "image" },
+        { src: "src/assets/img/3.jpg", type: "image" },
+        { src: "src/assets/img/4.jpg", type: "image" },
+        { src: "src/assets/img/5.jpg", type: "image" },
+        { src: "src/assets/img/6.jpg", type: "image" },
+        { src: "src/assets/img/7.jpg", type: "image" },
+        { src: "src/assets/img/8.jpg", type: "image" },
+        { src: "src/assets/img/9.jpg", type: "image" },
+        { src: "src/assets/img/10.jpg", type: "image" },
+        { src: "src/assets/img/11.jpg", type: "image" },
+        { src: "src/assets/img/12.jpg", type: "image" },
+      ]);
     },
   },
   mounted() {

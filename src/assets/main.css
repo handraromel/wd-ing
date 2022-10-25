@@ -5,7 +5,7 @@ html {
 body {
   overflow: auto !important;
   height: 100% !important;
-  background: url(@/assets/img/header-bg.webp) center no-repeat;
+  background: url(@/assets/img/bg2.webp) center no-repeat;
   background-size: cover;
 }
 body.modal-open {
@@ -36,6 +36,18 @@ body.modal-open {
   font-family: "australia";
   src: url(@/assets/fonts/australia.ttf);
 }
+@font-face {
+  font-family: "tss";
+  src: url(@/assets/fonts/tss.ttf);
+}
+@font-face {
+  font-family: "sunflower";
+  src: url(@/assets/fonts/sunflower.otf);
+}
+@font-face {
+  font-family: "megalona";
+  src: url(@/assets/fonts/megalona.otf);
+}
 
 .tangerine {
   font-family: tangerine-reg;
@@ -54,4 +66,13 @@ body.modal-open {
 }
 .australia {
   font-family: australia;
+}
+.tss {
+  font-family: tss;
+}
+.sunflower {
+  font-family: sunflower;
+}
+.megalona {
+  font-family: megalona;
 }

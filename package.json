@@ -7,9 +7,11 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
+    "@fancyapps/ui": "github:fancyapps/ui",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
+    "scrollmagic": "^2.0.8",
     "vue": "^3.2.37"
   },
   "devDependencies": {

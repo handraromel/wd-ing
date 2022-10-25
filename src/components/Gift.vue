@@ -11,7 +11,7 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="giftModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="giftModalLabel">Wedding gift</h1>
           <button
             type="button"
             class="btn-close"
@@ -19,16 +19,19 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">...</div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Close
-          </button>
-          <button type="button" class="btn btn-primary">Understood</button>
+        <div class="modal-body">
+          <div class="text-center py-3">
+            <img class="img-fluid pb-2" src="@/assets/img/bca.png" alt="" width="20%">
+            <p>6290444151 - A.n. Annissa Fitri Yonita</p>
+          </div>
+          <div class="text-center py-3">
+            <img class="img-fluid pb-2" src="@/assets/img/bsi.png" alt="" width="20%">
+            <p>7275630590 - A.n. Annisa Fitri Yonita</p>
+          </div>
+          <div class="text-center py-3">
+            <img class="img-fluid pb-2" src="@/assets/img/bni.png" alt="" width="20%">
+            <p>1228653444 - A.n. Annissa Fitri Yonita</p>
+          </div>
         </div>
       </div>
     </div>

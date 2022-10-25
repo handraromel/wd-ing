@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 #app {
-  font-family: "nunito";
+  font-family: "tss";
   color: #7c6a5e;
 }
 </style>
