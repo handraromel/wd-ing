@@ -253,6 +253,15 @@
                       </table>
                     </div>
                   </div>
+                  <div class="col-12">
+                    <a
+                      href="javascript:;"
+                      class="btn rounded-pill loc-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#locModal"
+                      >Open in Google Map</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -352,12 +361,17 @@
       </div>
     </transition>
   </div>
+  <Location />
 </template>
 
 <script>
 import ScrollMagic from "scrollmagic";
 import PerfectScrollbar from "perfect-scrollbar";
+import Location from "./Location.vue";
 export default {
+  components: {
+    Location,
+  },
   data() {
     return {
       controller: null,
@@ -565,6 +579,33 @@ td {
   -ms-transform: none;
   -o-transform: none;
   transform: none;
+}
+
+/* .loc-btn {
+  background: #7c6a5e;
+  color: #fff;
+  border: none;
+  padding: ;
+  letter-spacing: 0.3em;
+} */
+
+a.loc-btn {
+  text-decoration: none !important;
+  background: #7c6a5e;
+  padding: 0.3em 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: #ffffff;
+  font-size: 1em;
+  border: 0;
+  margin-top: 2em;
+  border-radius: 0;
+  z-index: 1;
+  display: inline-block;
+}
+
+a.loc-btn:hover {
+  box-shadow: 0 0 10px #7c6a5e;
 }
 
 @media (max-width: 1400px) {

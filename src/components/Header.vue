@@ -80,6 +80,9 @@
     </div>
     <FloatBtn />
     <Invitation ref="changeVal" />
+    <audio id="player" autoplay loop>
+      <source src="@/assets/media/audioplayback.mp3" type="audio/mp3" />
+    </audio>
   </div>
 </template>
 
@@ -88,7 +91,7 @@ import FloatBtn from "./FloatBtn.vue";
 import Invitation from "./Invitation.vue";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
-import PerfectScrollbar from 'perfect-scrollbar';
+import PerfectScrollbar from "perfect-scrollbar";
 
 export default {
   data() {
@@ -125,7 +128,9 @@ export default {
   },
   mounted() {
     this.guestName = new URL(location.href).searchParams.get("guest");
-    const ps = new PerfectScrollbar('#wd-header');
+    const ps = new PerfectScrollbar("#wd-header");
+    var vid = document.getElementById("player");
+    vid.volume = 0.5;
   },
 };
 </script>
