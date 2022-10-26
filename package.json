@@ -11,6 +11,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
+    "perfect-scrollbar": "^1.5.5",
     "scrollmagic": "^2.0.8",
     "vue": "^3.2.37"
   },

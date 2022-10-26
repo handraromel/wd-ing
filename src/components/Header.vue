@@ -1,5 +1,5 @@
 <template>
-  <header id="wd-header">
+  <div id="wd-header">
     <div class="container pb-md-0">
       <div
         id="header-content"
@@ -79,8 +79,8 @@
       </div>
     </div>
     <FloatBtn />
-    <Invitation :showed="show" />
-  </header>
+    <Invitation ref="changeVal" />
+  </div>
 </template>
 
 <script>
@@ -88,6 +88,7 @@ import FloatBtn from "./FloatBtn.vue";
 import Invitation from "./Invitation.vue";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
+import PerfectScrollbar from 'perfect-scrollbar';
 
 export default {
   data() {
@@ -103,7 +104,7 @@ export default {
   methods: {
     openOverlay() {
       document.getElementById("modalOverlay").style.width = "100%";
-      this.show = true;
+      this.$refs.changeVal.changeShowedVal();
     },
     openFancyBox() {
       Fancybox.show([
@@ -124,6 +125,7 @@ export default {
   },
   mounted() {
     this.guestName = new URL(location.href).searchParams.get("guest");
+    const ps = new PerfectScrollbar('#wd-header');
   },
 };
 </script>

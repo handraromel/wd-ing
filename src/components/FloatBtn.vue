@@ -32,7 +32,7 @@ export default {
   width: 35px;
   height: 35px;
   bottom: 0;
-  right: 0;
+  right: 1%;
   margin: 20px 35px;
   z-index: 2;
 }
@@ -44,14 +44,6 @@ export default {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
-/* .floating-container .floating-text {
-  position: absolute;
-  bottom: 170%;
-  font-size: 1.7em;
-  line-height: .6em;
-  color: #7c6a5e;
-} */
 
 .floating-container .floating-button {
   position: absolute;
