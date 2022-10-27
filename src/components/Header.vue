@@ -36,7 +36,7 @@
         </div>
         <div class="col-xl-6 text-center position-relative px-5">
           <img
-            class="img-fluid"
+            class="img-fluid rounded shadow-lg"
             src="@/assets/img/mainfront.webp"
             alt="Sample Photo"
             draggable="false"
@@ -197,12 +197,31 @@ $buttonPadding: 0.4em 3em;
 @include decor-position("logo", top, 5%, right, 0, width, 30%);
 @include decor-position("loc", bottom, -30%, right, 15%, width, 55%);
 
+@media (max-width: 1399px) {
+  .couple-font {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
 @media (max-width: 1200px) {
   @include headerHeight(85vh);
   @include aboutUsPadding(14em, 5em);
+
+  .couple-font {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 992px) {
+  .couple-font {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
   @include decor-position("tape", top, 5%, left, 0, width, 25%);
   @include headerHeight(85vh);
 
@@ -211,5 +230,18 @@ $buttonPadding: 0.4em 3em;
   }
 
   @include aboutUsPadding(7em, 5em);
+
+  .couple-font {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .couple-font {
+    padding-left: .89em;
+    padding-right: .89em;
+    font-size: 16vw;
+  }
 }
 </style>

@@ -20,7 +20,7 @@
                 <div class="col-md-5 py-3 px-4 px-lg-5 py-md-0">
                   <div class="px-xl-5 px-md-2 px-5">
                     <img
-                      class="img-fluid brides"
+                      class="img-fluid brides shadow"
                       src="@/assets/img/top-l.webp"
                       alt=""
                       draggable="false"
@@ -44,7 +44,7 @@
                 <div class="col-md-5 py-3 px-4 px-lg-5 py-md-0">
                   <div class="px-xl-5 px-md-2 px-5">
                     <img
-                      class="img-fluid brides"
+                      class="img-fluid brides shadow"
                       src="@/assets/img/top-r.webp"
                       alt=""
                       draggable="false"
@@ -73,7 +73,7 @@
         <section id="sec2">
           <div id="trigger1"></div>
           <div class="container">
-            <div id="reveal1" class="ins-container">
+            <div id="reveal1" class="ins-container shadow-lg">
               <div class="display-img-container">
                 <div class="titleset d-flex justify-content-center">
                   <div class="align-self-end text-white mb-5">
