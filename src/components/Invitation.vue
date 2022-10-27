@@ -512,7 +512,9 @@ export default {
 
 .bi-hearts {
   font-size: 3em;
-  text-shadow: 1px 1px 15px #615247;
+  transition: all 0.4s ease-in-out;
+  text-shadow: 0 0 20px #fff, 0 0 30px #805983, 0 0 40px #805983,
+    0 0 50px #805983, 0 0 60px #805983, 0 0 70px #805983, 0 0 80px #805983;
 }
 
 .margin-heart {
