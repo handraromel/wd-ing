@@ -74,13 +74,15 @@
           <div id="trigger1"></div>
           <div class="container">
             <div id="reveal1" class="ins-container">
-              <div class="titleset d-flex justify-content-center">
-                <div class="align-self-end text-white mb-5">
-                  <h1 class="sunflower">Wedding Day</h1>
-                  <h5>Location &amp; Time</h5>
+              <div class="display-img-container">
+                <div class="titleset d-flex justify-content-center">
+                  <div class="align-self-end text-white mb-5">
+                    <h1 class="sunflower">Wedding Day</h1>
+                    <h5>Location &amp; Time</h5>
+                  </div>
                 </div>
               </div>
-              <div class="contentset py-5">
+              <div class="contentset pt-4 pb-5">
                 <div class="row justify-content-center align-items-center">
                   <div class="col-md-5 px-sm-4 px-5 py-4">
                     <svg
@@ -413,7 +415,12 @@ export default {
   },
   mounted() {
     this.scrollMagicTrig();
-    const ps = new PerfectScrollbar("#modalOverlay");
+    const ps = new PerfectScrollbar("#modalOverlay", {
+      wheelSpeed: 1,
+      wheelPropagation: false,
+      minScrollbarLength: 0,
+    });
+    ps.update();
   },
 };
 </script>
@@ -512,28 +519,50 @@ export default {
   margin-top: 11em;
 }
 
+.display-img-container {
+  display: inline-block;
+  width: 100%;
+}
+
 .titleset {
   background-color: #bbb2ab;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("@/assets/img/bg-mid.webp") center no-repeat;
   background-image: #bbb2ab;
   height: 300px;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position-y: -130px;
+  -webkit-animation: zoomin 10s linear;
+  animation: zoomin 20s linear;
+  animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes zoomin {
+  0% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 .contentset {
   background-color: #bbb2ab;
   background: #bbb2ab;
   background-image: #bbb2ab;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
+  display: inline-block;
 }
 
 .ins-container {
-  padding: 5em 0;
+  margin: 5em 0;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 2em;
 }
 
 .protocols {
@@ -599,7 +628,6 @@ a.loc-btn {
   font-size: 1em;
   border: 0;
   margin-top: 2em;
-  border-radius: 0;
   z-index: 1;
   display: inline-block;
 }
