@@ -502,7 +502,7 @@ export default {
   position: absolute;
   top: 0%;
   right: 2%;
-  font-size: 50px;
+  font-size: 45px;
   color: #615247;
 }
 
