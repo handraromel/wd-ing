@@ -22,15 +22,15 @@
         <div class="modal-body">
           <div class="text-center py-3">
             <img class="img-fluid pb-2" src="@/assets/img/bca.png" alt="" width="20%">
-            <p>6290444151 - A.n. Annissa Fitri Yonita</p>
+            <p class="fs-5">6290444151 - A.n. Annissa Fitri Yonita</p>
           </div>
           <div class="text-center py-3">
             <img class="img-fluid pb-2" src="@/assets/img/bsi.png" alt="" width="20%">
-            <p>7275630590 - A.n. Annisa Fitri Yonita</p>
+            <p class="fs-5">7275630590 - A.n. Annisa Fitri Yonita</p>
           </div>
           <div class="text-center py-3">
             <img class="img-fluid pb-2" src="@/assets/img/bni.png" alt="" width="20%">
-            <p>1228653444 - A.n. Annissa Fitri Yonita</p>
+            <p class="fs-5">1228653444 - A.n. Annissa Fitri Yonita</p>
           </div>
         </div>
       </div>

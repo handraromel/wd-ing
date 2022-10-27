@@ -10,11 +10,11 @@
             <div id="">
               <h1 class="sunflower">The Bride &amp; Groom</h1>
               <div class="text-white">
-                <q
+                <q class="fs-5"
                   >I would rather spend one lifetime with you, than face all the
                   ages of this world alone.</q
                 >
-                <p class="fst-italic fw-bold">J.R.R. Tolkien</p>
+                <p class="fst-italic fw-bold fs-5">J.R.R. Tolkien</p>
               </div>
               <div class="row justify-content-center text-center py-md-5">
                 <div class="col-md-5 py-3 px-4 px-lg-5 py-md-0">
@@ -29,7 +29,7 @@
                   <div class="py-4">
                     <p class="fs-1 dancing">Annissa Fitri Yonita, S.S.</p>
                     <hr />
-                    <p>
+                    <p class="fs-5">
                       First daughter of <br />
                       <span class="megalona fw-bold">Mr. Erfasyoni</span>
                       <br />
@@ -53,7 +53,7 @@
                   <div class="py-4">
                     <p class="fs-1 dancing">Handra Romel, S.Kom.</p>
                     <hr />
-                    <p>
+                    <p class="fs-5">
                       First son of <br />
                       <span class="megalona fw-bold"
                         >Mr. Erwin Romel, S.E.</span
@@ -167,7 +167,7 @@
                     </svg>
                     <h2>Akad Nikah</h2>
                     <hr />
-                    <div class="text-start">
+                    <div class="text-start fs-5">
                       <table>
                         <tr>
                           <td><i class="bi bi-calendar"></i></td>
@@ -236,7 +236,7 @@
                     <h2>Wedding Reception</h2>
                     <hr />
                     <div class="text-start">
-                      <table>
+                      <table class="fs-5">
                         <tr>
                           <td><i class="bi bi-calendar"></i></td>
                           <td>Saturday, 3 December 2022</td>
@@ -289,7 +289,7 @@
                     alt=""
                     draggable="false"
                   />
-                  <p class="py-3">Wear Mask</p>
+                  <p class="py-3 fs-5">Wear Mask</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
                   <img
@@ -298,7 +298,7 @@
                     alt=""
                     draggable="false"
                   />
-                  <p class="py-3">Use Soap</p>
+                  <p class="py-3 fs-5">Use Soap</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
                   <img
@@ -307,7 +307,7 @@
                     alt=""
                     draggable="false"
                   />
-                  <p class="py-3">Wash Hands</p>
+                  <p class="py-3 fs-5">Wash Hands</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
                   <img
@@ -316,7 +316,7 @@
                     alt=""
                     draggable="false"
                   />
-                  <p class="py-3">Avoid the Crowds</p>
+                  <p class="py-3 fs-5">Avoid the Crowds</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
                   <img
@@ -325,7 +325,7 @@
                     alt=""
                     draggable="false"
                   />
-                  <p class="py-3">Use Hand Sanitizer</p>
+                  <p class="py-3 fs-5">Use Hand Sanitizer</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
                   <img
@@ -334,7 +334,7 @@
                     alt=""
                     draggable="false"
                   />
-                  <p class="py-3">No Handshake</p>
+                  <p class="py-3 fs-5">No Handshake</p>
                 </div>
               </div>
             </div>
@@ -347,13 +347,13 @@
               <div id="reveal3" class="row align-items-center">
                 <h3>Thank You</h3>
                 <p class="pb-3 bottom-name dancing">Annissa &amp; Handra</p>
-                <p class="fw-bold" style="line-height: 1.2em">
+                <p class="fw-bold fs-5" style="line-height: 1.2em">
                   The Big Family of
                 </p>
-                <p style="line-height: 0.4em">
+                <p class="fs-5" style="line-height: 0.4em">
                   Mr. Erfasyoni &amp; Mrs. Ernisasmita
                 </p>
-                <p style="line-height: 1.2em">
+                <p class="fs-5" style="line-height: 1.2em">
                   Mr. Erwin Romel, S.E. &amp; Mrs. Nurhayati (Almh.)
                 </p>
               </div>

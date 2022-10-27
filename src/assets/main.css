@@ -12,30 +12,13 @@ body {
 body.modal-open {
   padding-right: 0 !important;
 }
-
-@font-face {
-  font-family: "nunito";
-  src: url(@/assets/fonts/nunito.ttf);
-}
 @font-face {
   font-family: "fajardo";
   src: url(@/assets/fonts/fajardo.ttf);
 }
 @font-face {
-  font-family: "tangerine-reg";
-  src: url(@/assets/fonts/tangerine-reg.ttf);
-}
-@font-face {
-  font-family: "tangerine-bold";
-  src: url(@/assets/fonts/tangerine-bold.ttf);
-}
-@font-face {
   font-family: "dancing";
   src: url(@/assets/fonts/dancing.ttf);
-}
-@font-face {
-  font-family: "australia";
-  src: url(@/assets/fonts/australia.ttf);
 }
 @font-face {
   font-family: "tss";
@@ -50,23 +33,11 @@ body.modal-open {
   src: url(@/assets/fonts/megalona.otf);
 }
 
-.tangerine {
-  font-family: tangerine-reg;
-}
-.tangerine-b {
-  font-family: tangerine-bold;
-}
 .fajardo {
   font-family: fajardo;
 }
-.nunito {
-  font-family: nunito;
-}
 .dancing {
   font-family: dancing;
-}
-.australia {
-  font-family: australia;
 }
 .tss {
   font-family: tss;
@@ -77,7 +48,6 @@ body.modal-open {
 .megalona {
   font-family: megalona;
 }
-
 .btn-close {
   box-shadow: none !important;
 }
