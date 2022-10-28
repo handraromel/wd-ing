@@ -6,15 +6,19 @@
         class="row justify-content-center align-items-lg-center pt-5"
       >
         <div class="col-xl-6 text-center px-sm-5 px-3 pt-lg-0">
-          <img
+          <!-- <img
             class="img-fluid"
             src="@/assets/img/headec1.png"
             alt="Decoration 1"
             draggable="false"
+          /> -->
+          <v-lazy-image
+            class="img-fluid"
+            src="https://annissa-handra.my.id/assets/img/headec1.png"
           />
           <div class="pt-4 pb-0">
             <p class="fs-5 mb-1">Dear Mr. / Mrs. / Ms.</p>
-            <h1 class="dancing">{{ guestName }}</h1>
+            <p class="dancing guestname">{{ guestName }}</p>
           </div>
           <div class="py-3">
             <p class="mb-1 fs-5">
@@ -35,11 +39,15 @@
           </div>
         </div>
         <div class="col-xl-6 text-center position-relative px-5">
-          <img
+          <!-- <img
             class="img-fluid rounded shadow-lg"
             src="@/assets/img/mainfront.webp"
             alt="Sample Photo"
             draggable="false"
+          /> -->
+          <v-lazy-image
+            class="img-fluid"
+            src="https://annissa-handra.my.id/assets/img/mainfront.webp"
           />
           <!-- <div class="dec-tape">
             <img
@@ -50,19 +58,27 @@
             />
           </div> -->
           <div class="dec-logo">
-            <img
+            <!-- <img
               class="img-fluid"
               src="@/assets/img/headec3.png"
               alt="Decoration 3"
               draggable="false"
+            /> -->
+            <v-lazy-image
+              class="img-fluid"
+              src="https://annissa-handra.my.id/assets/img/headec3.png"
             />
           </div>
           <div class="dec-loc">
-            <img
+            <!-- <img
               class="img-fluid"
               src="@/assets/img/headec4.png"
               alt="Decoration 4"
               draggable="false"
+            /> -->
+            <v-lazy-image
+              class="img-fluid"
+              src="https://annissa-handra.my.id/assets/img/headec4.png"
             />
           </div>
         </div>
@@ -81,7 +97,10 @@
     <FloatBtn />
     <Invitation ref="changeVal" />
     <audio id="player" autoplay loop>
-      <source src="@/assets/media/audioplayback.mp3" type="audio/mp3" />
+      <source
+        src="https://annissa-handra.my.id/assets/media/audioplayback.mp3"
+        type="audio/mp3"
+      />
     </audio>
   </div>
 </template>
@@ -92,6 +111,7 @@ import Invitation from "./Invitation.vue";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
 import PerfectScrollbar from "perfect-scrollbar";
+import VLazyImage from "v-lazy-image";
 
 export default {
   data() {
@@ -101,6 +121,7 @@ export default {
     };
   },
   components: {
+    VLazyImage,
     FloatBtn,
     Invitation,
   },
@@ -111,18 +132,18 @@ export default {
     },
     openFancyBox() {
       Fancybox.show([
-        { src: "/assets/1.jpg", type: "image" },
-        { src: "/assets/2.jpg", type: "image" },
-        { src: "/assets/3.jpg", type: "image" },
-        { src: "/assets/4.jpg", type: "image" },
-        { src: "/assets/5.jpg", type: "image" },
-        { src: "/assets/6.jpg", type: "image" },
-        { src: "/assets/7.jpg", type: "image" },
-        { src: "/assets/8.jpg", type: "image" },
-        { src: "/assets/9.jpg", type: "image" },
-        { src: "/assets/10.jpg", type: "image" },
-        { src: "/assets/11.jpg", type: "image" },
-        { src: "/assets/12.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/1.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/2.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/3.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/4.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/5.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/6.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/7.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/8.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/9.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/10.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/11.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/12.jpg", type: "image" },
       ]);
     },
   },
@@ -136,7 +157,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$assetsPath: "@/assets/img";
 $shadowRadius: 1px 5px 15px #7c6a5e;
 $baseColor: #7c6a5e;
 $whiteText: #fff;
@@ -175,7 +195,11 @@ $buttonPadding: 0.4em 3em;
 }
 
 .couple-font {
-  font-size: 4em;
+  font-size: 3.7em;
+}
+
+.guestname {
+  font-size: 2.3em;
 }
 
 @mixin headerHeight($height) {
@@ -239,8 +263,8 @@ $buttonPadding: 0.4em 3em;
 
 @media (max-width: 576px) {
   .couple-font {
-    padding-left: .89em;
-    padding-right: .89em;
+    padding-left: 0.89em;
+    padding-right: 0.89em;
     font-size: 16vw;
   }
 }

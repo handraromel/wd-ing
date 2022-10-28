@@ -19,11 +19,15 @@
               <div class="row justify-content-center text-center py-md-5">
                 <div class="col-md-5 py-3 px-4 px-lg-5 py-md-0">
                   <div class="px-xl-5 px-md-2 px-5">
-                    <img
+                    <!-- <img
                       class="img-fluid brides shadow"
                       src="@/assets/img/top-l.webp"
                       alt=""
                       draggable="false"
+                    /> -->
+                    <v-lazy-image
+                      class="img-fluid brides shadow"
+                      src="https://annissa-handra.my.id/assets/img/top-l.webp"
                     />
                   </div>
                   <div class="py-4">
@@ -43,11 +47,15 @@
                 </div>
                 <div class="col-md-5 py-3 px-4 px-lg-5 py-md-0">
                   <div class="px-xl-5 px-md-2 px-5">
-                    <img
+                    <!-- <img
                       class="img-fluid brides shadow"
                       src="@/assets/img/top-r.webp"
                       alt=""
                       draggable="false"
+                    /> -->
+                    <v-lazy-image
+                      class="img-fluid brides shadow"
+                      src="https://annissa-handra.my.id/assets/img/top-r.webp"
                     />
                   </div>
                   <div class="py-4">
@@ -283,56 +291,80 @@
               <div id="trigger2"></div>
               <div id="reveal2" class="row protocols">
                 <div class="col-md-4 col-6 p-4">
-                  <img
+                  <!-- <img
                     class="img-fluid"
                     src="@/assets/img/mask.png"
                     alt=""
                     draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/mask.png"
                   />
                   <p class="py-3 fs-5">Wear Mask</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
-                  <img
+                  <!-- <img
                     class="img-fluid"
                     src="@/assets/img/soap.png"
                     alt=""
                     draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/soap.png"
                   />
                   <p class="py-3 fs-5">Use Soap</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
-                  <img
+                  <!-- <img
                     class="img-fluid"
                     src="@/assets/img/wash.png"
                     alt=""
                     draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/wash.png"
                   />
                   <p class="py-3 fs-5">Wash Hands</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
-                  <img
+                  <!-- <img
                     class="img-fluid"
                     src="@/assets/img/crowd.png"
                     alt=""
                     draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/crowd.png"
                   />
                   <p class="py-3 fs-5">Avoid the Crowds</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
-                  <img
+                  <!-- <img
                     class="img-fluid"
                     src="@/assets/img/sanitizer.png"
                     alt=""
                     draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/sanitizer.png"
                   />
                   <p class="py-3 fs-5">Use Hand Sanitizer</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
-                  <img
+                  <!-- <img
                     class="img-fluid"
                     src="@/assets/img/hands.png"
                     alt=""
                     draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/hands.png"
                   />
                   <p class="py-3 fs-5">No Handshake</p>
                 </div>
@@ -370,9 +402,12 @@
 import ScrollMagic from "scrollmagic";
 import PerfectScrollbar from "perfect-scrollbar";
 import Location from "./Location.vue";
+import VLazyImage from "v-lazy-image";
+
 export default {
   components: {
     Location,
+    VLazyImage,
   },
   data() {
     return {
@@ -455,7 +490,7 @@ export default {
 
 #sec2 {
   background-color: #bbb2ab;
-  background: url("@/assets/img/bg2.webp") center no-repeat;
+  background: url("https://annissa-handra.my.id/assets/img/bg2.webp") center no-repeat;
   background-image: #bbb2ab;
   background-size: cover;
 }
@@ -469,7 +504,7 @@ export default {
 #sec4 {
   background-color: #bbb2ab;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("@/assets/img/foot.webp") center no-repeat;
+    url("https://annissa-handra.my.id/assets/img/foot.webp") center no-repeat;
   background-image: #bbb2ab;
   background-size: cover;
   min-height: 75vh;
@@ -529,7 +564,7 @@ export default {
 .titleset {
   background-color: #bbb2ab;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("@/assets/img/bg-mid.webp") center no-repeat;
+    url("https://annissa-handra.my.id/assets/img/bg-mid.webp") center no-repeat;
   background-image: #bbb2ab;
   height: 300px;
   -webkit-background-size: cover;

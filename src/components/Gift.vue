@@ -21,15 +21,45 @@
         </div>
         <div class="modal-body">
           <div class="text-center py-3">
-            <img class="img-fluid pb-2" src="@/assets/img/bca.png" alt="" width="20%">
+            <!-- <img
+              class="img-fluid pb-2"
+              src="@/assets/img/bca.png"
+              alt=""
+              width="20%"
+            /> -->
+            <v-lazy-image
+              class="img-fluid pb-2"
+              src="https://annissa-handra.my.id/assets/img/bca.png"
+              width="20%"
+            />
             <p class="fs-5">6290444151 - A.n. Annissa Fitri Yonita</p>
           </div>
           <div class="text-center py-3">
-            <img class="img-fluid pb-2" src="@/assets/img/bsi.png" alt="" width="20%">
+            <!-- <img
+              class="img-fluid pb-2"
+              src="@/assets/img/bsi.png"
+              alt=""
+              width="20%"
+            /> -->
+            <v-lazy-image
+              class="img-fluid pb-2"
+              src="https://annissa-handra.my.id/assets/img/bsi.png"
+              width="20%"
+            />
             <p class="fs-5">7275630590 - A.n. Annisa Fitri Yonita</p>
           </div>
           <div class="text-center py-3">
-            <img class="img-fluid pb-2" src="@/assets/img/bni.png" alt="" width="20%">
+            <!-- <img
+              class="img-fluid pb-2"
+              src="@/assets/img/bni.png"
+              alt=""
+              width="20%"
+            /> -->
+            <v-lazy-image
+              class="img-fluid pb-2"
+              src="https://annissa-handra.my.id/assets/img/bni.png"
+              width="20%"
+            />
             <p class="fs-5">1228653444 - A.n. Annissa Fitri Yonita</p>
           </div>
         </div>
@@ -37,3 +67,12 @@
     </div>
   </div>
 </template>
+
+<script>
+import VLazyImage from "v-lazy-image";
+export default {
+  components: {
+    VLazyImage,
+  },
+};
+</script>

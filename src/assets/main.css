@@ -6,7 +6,8 @@ html {
 body {
   overflow: auto !important;
   height: 100% !important;
-  background: url(@/assets/img/bg2.webp) center no-repeat;
+  background: url(https://annissa-handra.my.id/assets/img/bg2.webp) center
+    no-repeat;
   background-size: cover;
 }
 body.modal-open {
@@ -14,23 +15,28 @@ body.modal-open {
 }
 @font-face {
   font-family: "fajardo";
-  src: url(@/assets/fonts/fajardo.ttf);
+  /* src: url(@/assets/fonts/fajardo.ttf); */
+  src: url(https://annissa-handra.my.id/assets/fonts/fajardo.ttf);
 }
 @font-face {
   font-family: "dancing";
-  src: url(@/assets/fonts/dancing.ttf);
+  /* src: url(@/assets/fonts/dancing.ttf); */
+  src: url(https://annissa-handra.my.id/assets/fonts/dancing.ttf);
 }
 @font-face {
   font-family: "tss";
-  src: url(@/assets/fonts/tss.ttf);
+  /* src: url(@/assets/fonts/tss.ttf); */
+  src: url(https://annissa-handra.my.id/assets/fonts/tss.ttf);
 }
 @font-face {
   font-family: "sunflower";
-  src: url(@/assets/fonts/sunflower.otf);
+  /* src: url(@/assets/fonts/sunflower.otf); */
+  src: url(https://annissa-handra.my.id/assets/fonts/sunflower.otf);
 }
 @font-face {
   font-family: "megalona";
-  src: url(@/assets/fonts/megalona.otf);
+  /* src: url(@/assets/fonts/megalona.otf); */
+  src: url(https://annissa-handra.my.id/assets/fonts/megalona.otf);
 }
 
 .fajardo {
@@ -50,4 +56,10 @@ body.modal-open {
 }
 .btn-close {
   box-shadow: none !important;
+}
+
+@media (max-width: 576px) {
+  body {
+    background: url(https://annissa-handra.my.id/assets/img/bg2.webp) center;
+  }
 }
