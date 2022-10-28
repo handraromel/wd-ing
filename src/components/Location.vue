@@ -21,11 +21,12 @@
         </div>
         <div class="modal-body p-0">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.67630531881235!2d100.6840383272301!3d-0.8192751840021067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2b35b49599a457%3A0x81cda27a23b0ceca!2sperumahan%20villa%20halaban%20indah!5e0!3m2!1sid!2sid!4v1666778087880!5m2!1sid!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249.33825422913543!2d100.6827182!3d-0.8176414!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8aad2e268ae8dc6!2zMMKwNDknMDMuNyJTIDEwMMKwNDAnNTcuNyJF!5e0!3m2!1sid!2sid!4v1666945266837!5m2!1sid!2sid"
             width="100%"
-            height="400"
-            frameborder="0"
+            height="450"
             style="border: 0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>

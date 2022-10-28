@@ -46,7 +46,7 @@
             draggable="false"
           /> -->
           <v-lazy-image
-            class="img-fluid"
+            class="img-fluid rounded shadow-lg"
             src="https://annissa-handra.my.id/assets/img/mainfront.webp"
           />
           <!-- <div class="dec-tape">
@@ -96,12 +96,6 @@
     </div>
     <FloatBtn />
     <Invitation ref="changeVal" />
-    <audio id="player" autoplay loop>
-      <source
-        src="https://annissa-handra.my.id/assets/media/audioplayback.mp3"
-        type="audio/mp3"
-      />
-    </audio>
   </div>
 </template>
 
@@ -110,7 +104,6 @@ import FloatBtn from "./FloatBtn.vue";
 import Invitation from "./Invitation.vue";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
-import PerfectScrollbar from "perfect-scrollbar";
 import VLazyImage from "v-lazy-image";
 
 export default {
@@ -141,17 +134,42 @@ export default {
         { src: "https://annissa-handra.my.id/assets/img/7.jpg", type: "image" },
         { src: "https://annissa-handra.my.id/assets/img/8.jpg", type: "image" },
         { src: "https://annissa-handra.my.id/assets/img/9.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/10.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/11.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/12.jpg", type: "image" },
+        {
+          src: "https://annissa-handra.my.id/assets/img/10.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/11.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/12.jpg",
+          type: "image",
+        },
       ]);
     },
   },
   mounted() {
     this.guestName = new URL(location.href).searchParams.get("guest");
-    const ps = new PerfectScrollbar("#wd-header");
-    var vid = document.getElementById("player");
-    vid.volume = 0.5;
+
+    var background = document.getElementById("wd-header");
+
+    // Fix background image jump on mobile
+    if (
+      /Android|iPhone|iPad|iPod|BlackBerry/i.test(
+        navigator.userAgent || navigator.vendor || window.opera
+      )
+    ) {
+      background.style.top = "auto";
+      background.style.bottom = 0;
+
+      window.onresize = sizeBackground;
+      sizeBackground();
+    }
+
+    function sizeBackground() {
+      background.style.height = screen.height;
+    }
   },
 };
 </script>
@@ -161,6 +179,12 @@ $shadowRadius: 1px 5px 15px #7c6a5e;
 $baseColor: #7c6a5e;
 $whiteText: #fff;
 $buttonPadding: 0.4em 3em;
+
+#wd-header {
+  background: url(https://annissa-handra.my.id/assets/img/bg2.webp) center
+    no-repeat;
+  background-size: cover;
+}
 
 .read-more {
   background: $baseColor;

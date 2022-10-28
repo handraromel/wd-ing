@@ -6,9 +6,6 @@ html {
 body {
   overflow: auto !important;
   height: 100% !important;
-  background: url(https://annissa-handra.my.id/assets/img/bg2.webp) center
-    no-repeat;
-  background-size: cover;
 }
 body.modal-open {
   padding-right: 0 !important;
@@ -56,10 +53,4 @@ body.modal-open {
 }
 .btn-close {
   box-shadow: none !important;
-}
-
-@media (max-width: 576px) {
-  body {
-    background: url(https://annissa-handra.my.id/assets/img/bg2.webp) center;
-  }
 }

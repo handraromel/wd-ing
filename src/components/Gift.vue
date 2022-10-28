@@ -28,9 +28,8 @@
               width="20%"
             /> -->
             <v-lazy-image
-              class="img-fluid pb-2"
+              class="img-fluid pb-2 banks"
               src="https://annissa-handra.my.id/assets/img/bca.png"
-              width="20%"
             />
             <p class="fs-5">6290444151 - A.n. Annissa Fitri Yonita</p>
           </div>
@@ -42,9 +41,8 @@
               width="20%"
             /> -->
             <v-lazy-image
-              class="img-fluid pb-2"
+              class="img-fluid pb-2 banks"
               src="https://annissa-handra.my.id/assets/img/bsi.png"
-              width="20%"
             />
             <p class="fs-5">7275630590 - A.n. Annisa Fitri Yonita</p>
           </div>
@@ -56,9 +54,8 @@
               width="20%"
             /> -->
             <v-lazy-image
-              class="img-fluid pb-2"
+              class="img-fluid pb-2 banks"
               src="https://annissa-handra.my.id/assets/img/bni.png"
-              width="20%"
             />
             <p class="fs-5">1228653444 - A.n. Annissa Fitri Yonita</p>
           </div>
@@ -76,3 +73,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .banks {
+    width: 20%;
+  }
+</style>
