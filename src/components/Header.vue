@@ -125,15 +125,42 @@ export default {
     },
     openFancyBox() {
       Fancybox.show([
-        { src: "https://annissa-handra.my.id/assets/img/gallery/1.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/gallery/2.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/gallery/3.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/gallery/4.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/gallery/5.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/gallery/6.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/gallery/7.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/gallery/8.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/gallery/9.jpg", type: "image" },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/1.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/2.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/3.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/4.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/5.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/6.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/7.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/8.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/9.jpg",
+          type: "image",
+        },
         {
           src: "https://annissa-handra.my.id/assets/img/gallery/10.jpg",
           type: "image",
@@ -354,6 +381,10 @@ $buttonPadding: 0.4em 3em;
     padding-left: 0.89em;
     padding-right: 0.89em;
     font-size: 16vw;
+  }
+
+  .guestname {
+    font-size: 2.5em;
   }
 }
 </style>
