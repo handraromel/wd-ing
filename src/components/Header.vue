@@ -89,7 +89,7 @@
             class="fajardo"
             style="color: inherit"
           >
-            <span class="fs-1">About us</span>
+            <span class="gallery-trig">Catch a glimpse of our moments</span>
           </a>
         </div>
       </div>
@@ -315,6 +315,14 @@ $buttonPadding: 0.4em 3em;
 
 .guestname {
   font-size: 2.3em;
+}
+
+.gallery-trig {
+  font-size: 2.3em;
+  transition: .3s;
+  &:hover {
+    text-shadow: $shadowRadius;
+  }
 }
 
 @mixin headerHeight($height) {

@@ -12,8 +12,8 @@ body.modal-open {
 }
 @font-face {
   font-family: "fajardo";
-  /* src: url(@/assets/fonts/fajardo.ttf); */
-  src: url(https://annissa-handra.my.id/assets/fonts/fajardo.ttf);
+  src: url(@/assets/fonts/fajardo.ttf);
+  /* src: url(https://annissa-handra.my.id/assets/fonts/fajardo.ttf); */
 }
 @font-face {
   font-family: "dancing";

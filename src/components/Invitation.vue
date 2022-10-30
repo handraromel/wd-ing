@@ -377,7 +377,7 @@
             <div class="ins-container">
               <div id="trigger3"></div>
               <div id="reveal3" class="row align-items-center">
-                <h3>Thank You</h3>
+                <h1 class="sunflower">Thank You</h1>
                 <h5>Your presence at our wedding <br> is all that we wish for</h5>
                 <p class="pb-3 bottom-name dancing">Annissa &amp; Handra</p>
                 <p class="fw-bold fs-5" style="line-height: 1.2em">
