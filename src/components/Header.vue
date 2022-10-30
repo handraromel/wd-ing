@@ -125,25 +125,89 @@ export default {
     },
     openFancyBox() {
       Fancybox.show([
-        { src: "https://annissa-handra.my.id/assets/img/1.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/2.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/3.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/4.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/5.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/6.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/7.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/8.jpg", type: "image" },
-        { src: "https://annissa-handra.my.id/assets/img/9.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/gallery/1.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/gallery/2.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/gallery/3.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/gallery/4.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/gallery/5.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/gallery/6.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/gallery/7.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/gallery/8.jpg", type: "image" },
+        { src: "https://annissa-handra.my.id/assets/img/gallery/9.jpg", type: "image" },
         {
-          src: "https://annissa-handra.my.id/assets/img/10.jpg",
+          src: "https://annissa-handra.my.id/assets/img/gallery/10.jpg",
           type: "image",
         },
         {
-          src: "https://annissa-handra.my.id/assets/img/11.jpg",
+          src: "https://annissa-handra.my.id/assets/img/gallery/11.jpg",
           type: "image",
         },
         {
-          src: "https://annissa-handra.my.id/assets/img/12.jpg",
+          src: "https://annissa-handra.my.id/assets/img/gallery/12.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/13.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/14.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/15.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/16.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/17.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/18.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/19.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/20.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/21.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/22.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/23.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/24.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/25.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/26.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/27.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery/28.jpg",
           type: "image",
         },
       ]);

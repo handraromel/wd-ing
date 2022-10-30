@@ -27,7 +27,7 @@
                     /> -->
                     <v-lazy-image
                       class="img-fluid brides shadow"
-                      src="https://annissa-handra.my.id/assets/img/top-l.webp"
+                      src="https://annissa-handra.my.id/assets/img/top-l.jpg"
                     />
                   </div>
                   <div class="py-4">
@@ -55,7 +55,7 @@
                     /> -->
                     <v-lazy-image
                       class="img-fluid brides shadow"
-                      src="https://annissa-handra.my.id/assets/img/top-r.webp"
+                      src="https://annissa-handra.my.id/assets/img/top-r.jpg"
                     />
                   </div>
                   <div class="py-4">
