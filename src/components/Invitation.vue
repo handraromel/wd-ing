@@ -281,15 +281,15 @@
           <div class="container">
             <div class="ins-container">
               <div class="pb-5">
-                <h5>This event will be held using</h5>
-                <h1 class="sunflower">Health Protocol</h1>
+                <h5>A glimpse of</h5>
+                <h1 class="sunflower">Our Moments</h1>
                 <h5>
                   in accordance with government regulations &amp;
                   recommendations
                 </h5>
               </div>
               <div id="trigger2"></div>
-              <div id="reveal2" class="row protocols">
+              <div id="reveal2" class="row gallery">
                 <div class="col-md-4 col-6 p-4">
                   <!-- <img
                     class="img-fluid"
@@ -372,11 +372,106 @@
             </div>
           </div>
         </section>
-        <section id="sec4" class="text-white">
+        <section id="sec4">
           <div class="container">
             <div class="ins-container">
+              <div class="pb-5">
+                <h5>This event will be held using</h5>
+                <h1 class="sunflower">Health Protocol</h1>
+                <h5>
+                  in accordance with government regulations &amp;
+                  recommendations
+                </h5>
+              </div>
               <div id="trigger3"></div>
-              <div id="reveal3" class="row align-items-center">
+              <div id="reveal3" class="row protocols">
+                <div class="col-md-4 col-6 p-4">
+                  <!-- <img
+                    class="img-fluid"
+                    src="@/assets/img/mask.png"
+                    alt=""
+                    draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/mask.png"
+                  />
+                  <p class="py-3 fs-5">Wear Mask</p>
+                </div>
+                <div class="col-md-4 col-6 p-4">
+                  <!-- <img
+                    class="img-fluid"
+                    src="@/assets/img/soap.png"
+                    alt=""
+                    draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/soap.png"
+                  />
+                  <p class="py-3 fs-5">Use Soap</p>
+                </div>
+                <div class="col-md-4 col-6 p-4">
+                  <!-- <img
+                    class="img-fluid"
+                    src="@/assets/img/wash.png"
+                    alt=""
+                    draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/wash.png"
+                  />
+                  <p class="py-3 fs-5">Wash Hands</p>
+                </div>
+                <div class="col-md-4 col-6 p-4">
+                  <!-- <img
+                    class="img-fluid"
+                    src="@/assets/img/crowd.png"
+                    alt=""
+                    draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/crowd.png"
+                  />
+                  <p class="py-3 fs-5">Avoid the Crowds</p>
+                </div>
+                <div class="col-md-4 col-6 p-4">
+                  <!-- <img
+                    class="img-fluid"
+                    src="@/assets/img/sanitizer.png"
+                    alt=""
+                    draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/sanitizer.png"
+                  />
+                  <p class="py-3 fs-5">Use Hand Sanitizer</p>
+                </div>
+                <div class="col-md-4 col-6 p-4">
+                  <!-- <img
+                    class="img-fluid"
+                    src="@/assets/img/hands.png"
+                    alt=""
+                    draggable="false"
+                  /> -->
+                  <v-lazy-image
+                    class="img-fluid"
+                    src="https://annissa-handra.my.id/assets/img/hands.png"
+                  />
+                  <p class="py-3 fs-5">No Handshake</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="sec5" class="text-white">
+          <div class="container">
+            <div class="ins-container">
+              <div id="trigger4"></div>
+              <div id="reveal4" class="row align-items-center">
                 <h1 class="sunflower">Thank You</h1>
                 <h5>Your presence at our wedding <br> is all that we wish for</h5>
                 <p class="pb-3 bottom-name dancing">Annissa &amp; Handra</p>
@@ -503,6 +598,12 @@ export default {
 }
 
 #sec4 {
+  background-color: #d1d0d0;
+  background: #d1d0d0;
+  background-image: #d1d0d0;
+}
+
+#sec5 {
   background-color: #bbb2ab;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://annissa-handra.my.id/assets/img/foot.webp") center no-repeat;
