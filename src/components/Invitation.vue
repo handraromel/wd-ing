@@ -723,7 +723,7 @@ export default {
   background-image: #bbb2ab;
   background-size: cover;
   min-height: 75vh;
-  padding-top: 7.5em;
+  padding-top: 1.5em;
 }
 
 .overlay-content {
