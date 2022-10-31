@@ -279,94 +279,70 @@
         </section>
         <section id="sec3">
           <div class="container">
-            <div class="ins-container">
+            <div class="moments-container">
               <div class="pb-5">
                 <h5>A glimpse of</h5>
                 <h1 class="sunflower">Our Moments</h1>
-                <h5>
-                  in accordance with government regulations &amp;
-                  recommendations
-                </h5>
+                <h5>Feel the warmth of our happiness and joy</h5>
               </div>
-              <div id="trigger2"></div>
-              <div id="reveal2" class="row gallery">
-                <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/mask.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
-                  <v-lazy-image
-                    class="img-fluid"
-                    src="https://annissa-handra.my.id/assets/img/mask.png"
-                  />
-                  <p class="py-3 fs-5">Wear Mask</p>
+              <div class="gallery px-4 py-3">
+                <div class="row">
+                  <div class="col-md-4 col-12 p-4">
+                    <div id="trigger4"></div>
+                    <v-lazy-image
+                      id="reveal4"
+                      class="img-fluid rounded-2 shadow"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/9.jpg"
+                    />
+                  </div>
+                  <div class="col-md-4 col-12 p-4">
+                    <div id="trigger5"></div>
+                    <v-lazy-image
+                      id="reveal5"
+                      class="img-fluid rounded-2 shadow"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/10.jpg"
+                    />
+                  </div>
+                  <div class="col-md-4 col-12 p-4">
+                    <div id="trigger6"></div>
+                    <v-lazy-image
+                      id="reveal6"
+                      class="img-fluid rounded-2 shadow"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/13.jpg"
+                    />
+                  </div>
+                  <div class="col-md-4 col-12 p-4">
+                    <div id="trigger7"></div>
+                    <v-lazy-image
+                      id="reveal7"
+                      class="img-fluid rounded-2 shadow"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/20.jpg"
+                    />
+                  </div>
+                  <div class="col-md-4 col-12 p-4">
+                    <div id="trigger8"></div>
+                    <v-lazy-image
+                      id="reveal8"
+                      class="img-fluid rounded-2 shadow"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/23.jpg"
+                    />
+                  </div>
+                  <div class="col-md-4 col-12 p-4">
+                    <div id="trigger9"></div>
+                    <v-lazy-image
+                      id="reveal9"
+                      class="img-fluid rounded-2 shadow"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/24.jpg"
+                    />
+                  </div>
                 </div>
-                <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/soap.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
-                  <v-lazy-image
-                    class="img-fluid"
-                    src="https://annissa-handra.my.id/assets/img/soap.png"
-                  />
-                  <p class="py-3 fs-5">Use Soap</p>
-                </div>
-                <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/wash.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
-                  <v-lazy-image
-                    class="img-fluid"
-                    src="https://annissa-handra.my.id/assets/img/wash.png"
-                  />
-                  <p class="py-3 fs-5">Wash Hands</p>
-                </div>
-                <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/crowd.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
-                  <v-lazy-image
-                    class="img-fluid"
-                    src="https://annissa-handra.my.id/assets/img/crowd.png"
-                  />
-                  <p class="py-3 fs-5">Avoid the Crowds</p>
-                </div>
-                <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/sanitizer.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
-                  <v-lazy-image
-                    class="img-fluid"
-                    src="https://annissa-handra.my.id/assets/img/sanitizer.png"
-                  />
-                  <p class="py-3 fs-5">Use Hand Sanitizer</p>
-                </div>
-                <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/hands.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
-                  <v-lazy-image
-                    class="img-fluid"
-                    src="https://annissa-handra.my.id/assets/img/hands.png"
-                  />
-                  <p class="py-3 fs-5">No Handshake</p>
+                <div class="col-12 mb-5">
+                  <a
+                    href="javascript:;"
+                    class="btn rounded-pill moments-btn"
+                    @click="openFancyBox"
+                    >Explore more</a
+                  >
                 </div>
               </div>
             </div>
@@ -383,15 +359,9 @@
                   recommendations
                 </h5>
               </div>
-              <div id="trigger3"></div>
-              <div id="reveal3" class="row protocols">
+              <div id="trigger2"></div>
+              <div id="reveal2" class="row protocols">
                 <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/mask.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
                   <v-lazy-image
                     class="img-fluid"
                     src="https://annissa-handra.my.id/assets/img/mask.png"
@@ -399,12 +369,6 @@
                   <p class="py-3 fs-5">Wear Mask</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/soap.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
                   <v-lazy-image
                     class="img-fluid"
                     src="https://annissa-handra.my.id/assets/img/soap.png"
@@ -412,12 +376,6 @@
                   <p class="py-3 fs-5">Use Soap</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/wash.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
                   <v-lazy-image
                     class="img-fluid"
                     src="https://annissa-handra.my.id/assets/img/wash.png"
@@ -425,12 +383,6 @@
                   <p class="py-3 fs-5">Wash Hands</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/crowd.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
                   <v-lazy-image
                     class="img-fluid"
                     src="https://annissa-handra.my.id/assets/img/crowd.png"
@@ -438,12 +390,6 @@
                   <p class="py-3 fs-5">Avoid the Crowds</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/sanitizer.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
                   <v-lazy-image
                     class="img-fluid"
                     src="https://annissa-handra.my.id/assets/img/sanitizer.png"
@@ -451,12 +397,6 @@
                   <p class="py-3 fs-5">Use Hand Sanitizer</p>
                 </div>
                 <div class="col-md-4 col-6 p-4">
-                  <!-- <img
-                    class="img-fluid"
-                    src="@/assets/img/hands.png"
-                    alt=""
-                    draggable="false"
-                  /> -->
                   <v-lazy-image
                     class="img-fluid"
                     src="https://annissa-handra.my.id/assets/img/hands.png"
@@ -470,10 +410,13 @@
         <section id="sec5" class="text-white">
           <div class="container">
             <div class="ins-container">
-              <div id="trigger4"></div>
-              <div id="reveal4" class="row align-items-center">
+              <div id="trigger3"></div>
+              <div id="reveal3" class="row align-items-center">
                 <h1 class="sunflower">Thank You</h1>
-                <h5>Your presence at our wedding <br> is all that we wish for</h5>
+                <h5>
+                  Your presence at our wedding <br />
+                  is all that we wish for
+                </h5>
                 <p class="pb-3 bottom-name dancing">Annissa &amp; Handra</p>
                 <p class="fw-bold fs-5" style="line-height: 1.2em">
                   The Big Family of
@@ -499,6 +442,8 @@ import ScrollMagic from "scrollmagic";
 import PerfectScrollbar from "perfect-scrollbar";
 import Location from "./Location.vue";
 import VLazyImage from "v-lazy-image";
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox.css";
 
 export default {
   components: {
@@ -511,6 +456,12 @@ export default {
       scene1: null,
       scene2: null,
       scene3: null,
+      scene4: null,
+      scene5: null,
+      scene6: null,
+      scene7: null,
+      scene8: null,
+      scene9: null,
       showed: false,
     };
   },
@@ -542,6 +493,158 @@ export default {
       })
         .setClassToggle("#reveal3", "visible")
         .addTo(this.controller);
+      this.scene4 = new ScrollMagic.Scene({
+        triggerElement: "#trigger4",
+        triggerHook: 0.9,
+      })
+        .setClassToggle("#reveal4", "visible")
+        .addTo(this.controller);
+      this.scene5 = new ScrollMagic.Scene({
+        triggerElement: "#trigger5",
+        triggerHook: 0.9,
+      })
+        .setClassToggle("#reveal5", "visible")
+        .addTo(this.controller);
+      this.scene6 = new ScrollMagic.Scene({
+        triggerElement: "#trigger6",
+        triggerHook: 0.9,
+      })
+        .setClassToggle("#reveal6", "visible")
+        .addTo(this.controller);
+      this.scene7 = new ScrollMagic.Scene({
+        triggerElement: "#trigger7",
+        triggerHook: 0.9,
+      })
+        .setClassToggle("#reveal7", "visible")
+        .addTo(this.controller);
+      this.scene8 = new ScrollMagic.Scene({
+        triggerElement: "#trigger8",
+        triggerHook: 0.9,
+      })
+        .setClassToggle("#reveal8", "visible")
+        .addTo(this.controller);
+      this.scene9 = new ScrollMagic.Scene({
+        triggerElement: "#trigger9",
+        triggerHook: 0.9,
+      })
+        .setClassToggle("#reveal9", "visible")
+        .addTo(this.controller);
+    },
+    openFancyBox() {
+      Fancybox.show([
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/1.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/2.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/3.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/4.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/5.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/6.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/7.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/8.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/9.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/10.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/11.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/12.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/13.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/14.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/15.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/16.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/17.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/18.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/19.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/20.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/21.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/22.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/23.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/24.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/25.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/26.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/27.jpg",
+          type: "image",
+        },
+        {
+          src: "https://annissa-handra.my.id/assets/img/gallery2/28.jpg",
+          type: "image",
+        },
+      ]);
     },
   },
   mounted() {
@@ -586,21 +689,31 @@ export default {
 
 #sec2 {
   background-color: #bbb2ab;
-  background: url("https://annissa-handra.my.id/assets/img/bg2.webp") center no-repeat;
+  background: url("https://annissa-handra.my.id/assets/img/bg2.webp") center
+    no-repeat;
   background-image: #bbb2ab;
   background-size: cover;
 }
 
 #sec3 {
-  background-color: #bbb2ab;
-  background: #bbb2ab;
-  background-image: #bbb2ab;
-}
-
-#sec4 {
   background-color: #d1d0d0;
   background: #d1d0d0;
   background-image: #d1d0d0;
+}
+
+.gallery {
+  background-color: #d1d0d0;
+  background: url("https://annissa-handra.my.id/assets/img/bg2.webp") center
+    no-repeat;
+  background-image: #d1d0d0;
+  background-size: cover;
+  border-radius: 2em;
+}
+
+#sec4 {
+  background-color: #bbb2ab;
+  background: #bbb2ab;
+  background-image: #bbb2ab;
 }
 
 #sec5 {
@@ -704,6 +817,12 @@ export default {
   border-radius: 2em;
 }
 
+.moments-container {
+  margin: 3em 0;
+  display: inline-block;
+  overflow: hidden;
+}
+
 .protocols {
   padding: 0 10em;
 }
@@ -724,7 +843,13 @@ td {
 
 #reveal1,
 #reveal2,
-#reveal3 {
+#reveal3,
+#reveal4,
+#reveal5,
+#reveal6,
+#reveal7,
+#reveal8,
+#reveal9 {
   opacity: 0;
   -webkit-transform: translateY(10%);
   -moz-transform: translateY(10%);
@@ -740,7 +865,13 @@ td {
 
 #reveal1.visible,
 #reveal2.visible,
-#reveal3.visible {
+#reveal3.visible,
+#reveal4.visible,
+#reveal5.visible,
+#reveal6.visible,
+#reveal7.visible,
+#reveal8.visible,
+#reveal9.visible {
   opacity: 1;
   -webkit-transform: none;
   -moz-transform: none;
@@ -757,7 +888,8 @@ td {
   letter-spacing: 0.3em;
 } */
 
-a.loc-btn {
+a.loc-btn,
+a.moments-btn {
   text-decoration: none !important;
   background: #7c6a5e;
   padding: 0.3em 1.5em;
@@ -771,7 +903,8 @@ a.loc-btn {
   display: inline-block;
 }
 
-a.loc-btn:hover {
+a.loc-btn:hover,
+a.moments-btn:hover {
   box-shadow: 0 0 10px #7c6a5e;
 }
 
@@ -837,6 +970,12 @@ a.loc-btn:hover {
 
   #sec4 {
     padding-top: 0.5em;
+  }
+
+  .gallery {
+    background: url("https://annissa-handra.my.id/assets/img/bg2-m.webp") center
+      no-repeat;
+    background-size: cover;
   }
 }
 </style>

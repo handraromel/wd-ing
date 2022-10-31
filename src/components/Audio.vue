@@ -12,7 +12,7 @@
 export default {
   mounted() {
     var audio = document.getElementById("player");
-    audio.volume = 0.35;
+    audio.volume = 0.3;
 
     audio.addEventListener("canplaythrough", () => {
       audio.play().catch((e) => {

@@ -82,15 +82,16 @@
             />
           </div>
         </div>
-        <div class="col-xl-6 text-center pt-about">
-          <a
+        <div class="col-xl-6 text-center pt-about mt-5">
+          <!-- <a
             href="javascript:;"
             @click="openFancyBox"
             class="fajardo"
             style="color: inherit"
           >
             <span class="gallery-trig">Catch a glimpse of our moments</span>
-          </a>
+          </a> -->
+          <span class="fs-6">&#169;&nbsp;2022 Annissa &amp; Handra</span>
         </div>
       </div>
     </div>
@@ -102,8 +103,6 @@
 <script>
 import FloatBtn from "./FloatBtn.vue";
 import Invitation from "./Invitation.vue";
-import { Fancybox } from "@fancyapps/ui";
-import "@fancyapps/ui/dist/fancybox.css";
 import VLazyImage from "v-lazy-image";
 
 export default {
@@ -122,122 +121,6 @@ export default {
     openOverlay() {
       document.getElementById("modalOverlay").style.width = "100%";
       this.$refs.changeVal.changeShowedVal();
-    },
-    openFancyBox() {
-      Fancybox.show([
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/1.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/2.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/3.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/4.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/5.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/6.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/7.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/8.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/9.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/10.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/11.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/12.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/13.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/14.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/15.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/16.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/17.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/18.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/19.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/20.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/21.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/22.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/23.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/24.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/25.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/26.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/27.jpg",
-          type: "image",
-        },
-        {
-          src: "https://annissa-handra.my.id/assets/img/gallery2/28.jpg",
-          type: "image",
-        },
-      ]);
     },
   },
   mounted() {
@@ -317,14 +200,14 @@ $buttonPadding: 0.4em 3em;
   font-size: 2.3em;
 }
 
-.gallery-trig {
-  font-size: 2.3em;
-  transition: .3s;
-  text-shadow: 1px 5px 15px #ab57ff8d;
-  &:hover {
-    text-shadow: $shadowRadius;
-  }
-}
+// .gallery-trig {
+//   font-size: 2.3em;
+//   transition: 0.3s;
+//   text-shadow: 1px 5px 15px #ab57ff8d;
+//   &:hover {
+//     text-shadow: $shadowRadius;
+//   }
+// }
 
 @mixin headerHeight($height) {
   #header-content {

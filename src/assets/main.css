@@ -3,54 +3,66 @@ html {
   height: 100% !important;
   scroll-behavior: smooth;
 }
+
 body {
   overflow: auto !important;
   height: 100% !important;
 }
+
 body.modal-open {
   padding-right: 0 !important;
 }
+
 @font-face {
   font-family: "fajardo";
-  src: url(@/assets/fonts/fajardo.ttf);
-  /* src: url(https://annissa-handra.my.id/assets/fonts/fajardo.ttf); */
+  /* src: url(@/assets/fonts/fajardo.ttf); */
+  src: url(https://annissa-handra.my.id/assets/fonts/fajardo.ttf);
 }
+
 @font-face {
   font-family: "dancing";
-  src: url(@/assets/fonts/dancing.ttf);
-  /* src: url(https://annissa-handra.my.id/assets/fonts/dancing.ttf); */
+  /* src: url(@/assets/fonts/dancing.ttf); */
+  src: url(https://annissa-handra.my.id/assets/fonts/dancing.ttf);
 }
+
 @font-face {
   font-family: "tss";
-  src: url(@/assets/fonts/tss.ttf);
-  /* src: url(https://annissa-handra.my.id/assets/fonts/tss.ttf); */
+  /* src: url(@/assets/fonts/tss.ttf); */
+  src: url(https://annissa-handra.my.id/assets/fonts/tss.ttf);
 }
+
 @font-face {
   font-family: "sunflower";
-  src: url(@/assets/fonts/sunflower.otf);
-  /* src: url(https://annissa-handra.my.id/assets/fonts/sunflower.otf); */
+  /* src: url(@/assets/fonts/sunflower.otf); */
+  src: url(https://annissa-handra.my.id/assets/fonts/sunflower.otf);
 }
+
 @font-face {
   font-family: "megalona";
-  src: url(@/assets/fonts/megalona.otf);
-  /* src: url(https://annissa-handra.my.id/assets/fonts/megalona.otf); */
+  /* src: url(@/assets/fonts/megalona.otf); */
+  src: url(https://annissa-handra.my.id/assets/fonts/megalona.otf);
 }
 
 .fajardo {
   font-family: fajardo;
 }
+
 .dancing {
   font-family: dancing;
 }
+
 .tss {
   font-family: tss;
 }
+
 .sunflower {
   font-family: sunflower;
 }
+
 .megalona {
   font-family: megalona;
 }
+
 .btn-close {
   box-shadow: none !important;
 }
