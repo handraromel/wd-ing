@@ -285,52 +285,41 @@
                 <h1 class="sunflower">Our Moments</h1>
                 <h5>Feel the warmth of our happiness and joy</h5>
               </div>
+              <div id="trigger5"></div>
               <div class="gallery px-4 py-3">
-                <div class="row">
+                <div id="reveal5" class="row">
                   <div class="col-md-4 col-12 p-4">
-                    <div id="trigger5"></div>
                     <v-lazy-image
-                      id="reveal5"
                       class="img-fluid rounded-2 shadow"
                       src="https://annissa-handra.my.id/assets/img/gallery2/9.jpg"
                     />
                   </div>
                   <div class="col-md-4 col-12 p-4">
-                    <div id="trigger6"></div>
                     <v-lazy-image
-                      id="reveal6"
                       class="img-fluid rounded-2 shadow"
                       src="https://annissa-handra.my.id/assets/img/gallery2/10.jpg"
                     />
                   </div>
                   <div class="col-md-4 col-12 p-4">
-                    <div id="trigger7"></div>
                     <v-lazy-image
-                      id="reveal7"
                       class="img-fluid rounded-2 shadow"
                       src="https://annissa-handra.my.id/assets/img/gallery2/13.jpg"
                     />
                   </div>
                   <div class="col-md-4 col-12 p-4">
-                    <div id="trigger8"></div>
                     <v-lazy-image
-                      id="reveal8"
                       class="img-fluid rounded-2 shadow"
                       src="https://annissa-handra.my.id/assets/img/gallery2/20.jpg"
                     />
                   </div>
                   <div class="col-md-4 col-12 p-4">
-                    <div id="trigger9"></div>
                     <v-lazy-image
-                      id="reveal9"
                       class="img-fluid rounded-2 shadow"
                       src="https://annissa-handra.my.id/assets/img/gallery2/23.jpg"
                     />
                   </div>
                   <div class="col-md-4 col-12 p-4">
-                    <div id="trigger10"></div>
                     <v-lazy-image
-                      id="reveal10"
                       class="img-fluid rounded-2 shadow"
                       src="https://annissa-handra.my.id/assets/img/gallery2/24.jpg"
                     />
@@ -592,11 +581,6 @@ export default {
       scene3: null,
       scene4: null,
       scene5: null,
-      scene6: null,
-      scene7: null,
-      scene8: null,
-      scene9: null,
-      scene10: null,
       showed: false,
       bca: "6290444151",
       bsi: "7275630590",
@@ -645,36 +629,6 @@ export default {
         triggerHook: 0.9,
       })
         .setClassToggle("#reveal5", "visible")
-        .addTo(this.controller);
-      this.scene6 = new ScrollMagic.Scene({
-        triggerElement: "#trigger6",
-        triggerHook: 0.9,
-      })
-        .setClassToggle("#reveal6", "visible")
-        .addTo(this.controller);
-      this.scene7 = new ScrollMagic.Scene({
-        triggerElement: "#trigger7",
-        triggerHook: 0.9,
-      })
-        .setClassToggle("#reveal7", "visible")
-        .addTo(this.controller);
-      this.scene8 = new ScrollMagic.Scene({
-        triggerElement: "#trigger8",
-        triggerHook: 0.9,
-      })
-        .setClassToggle("#reveal8", "visible")
-        .addTo(this.controller);
-      this.scene9 = new ScrollMagic.Scene({
-        triggerElement: "#trigger9",
-        triggerHook: 0.9,
-      })
-        .setClassToggle("#reveal9", "visible")
-        .addTo(this.controller);
-      this.scene10 = new ScrollMagic.Scene({
-        triggerElement: "#trigger10",
-        triggerHook: 0.9,
-      })
-        .setClassToggle("#reveal10", "visible")
         .addTo(this.controller);
     },
     openFancyBox() {
@@ -1080,43 +1034,33 @@ td {
 #reveal3,
 #reveal4 {
   opacity: 0;
-  -webkit-transform: translateY(10%);
-  -moz-transform: translateY(10%);
-  -ms-transform: translateY(10%);
-  -o-transform: translateY(10%);
-  transform: translateY(10%);
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transform: translateY(12%);
+  -moz-transform: translateY(12%);
+  -ms-transform: translateY(12%);
+  -o-transform: translateY(12%);
+  transform: translateY(12%);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 #reveal2,
-#reveal5,
-#reveal6,
-#reveal7,
-#reveal8,
-#reveal9,
-#reveal10 {
+#reveal5 {
   opacity: 0;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -ms-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
 }
 
 #reveal1.visible,
 #reveal2.visible,
 #reveal3.visible,
 #reveal4.visible,
-#reveal5.visible,
-#reveal6.visible,
-#reveal7.visible,
-#reveal8.visible,
-#reveal9.visible,
-#reveal10.visible {
+#reveal5.visible {
   opacity: 1;
   -webkit-transform: none;
   -moz-transform: none;
