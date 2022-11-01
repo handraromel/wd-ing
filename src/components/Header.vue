@@ -95,13 +95,13 @@
         </div>
       </div>
     </div>
-    <FloatBtn />
+    <!-- <FloatBtn /> -->
     <Invitation ref="changeVal" />
   </div>
 </template>
 
 <script>
-import FloatBtn from "./FloatBtn.vue";
+// import FloatBtn from "./FloatBtn.vue";
 import Invitation from "./Invitation.vue";
 import VLazyImage from "v-lazy-image";
 
@@ -114,7 +114,7 @@ export default {
   },
   components: {
     VLazyImage,
-    FloatBtn,
+    // FloatBtn,
     Invitation,
   },
   methods: {

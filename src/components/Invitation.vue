@@ -263,7 +263,7 @@
                       </table>
                     </div>
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 mt-4">
                     <a
                       href="javascript:;"
                       class="btn rounded-pill loc-btn"
@@ -288,19 +288,11 @@
               <div class="gallery px-4 py-3">
                 <div class="row">
                   <div class="col-md-4 col-12 p-4">
-                    <div id="trigger4"></div>
-                    <v-lazy-image
-                      id="reveal4"
-                      class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/9.jpg"
-                    />
-                  </div>
-                  <div class="col-md-4 col-12 p-4">
                     <div id="trigger5"></div>
                     <v-lazy-image
                       id="reveal5"
                       class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/10.jpg"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/9.jpg"
                     />
                   </div>
                   <div class="col-md-4 col-12 p-4">
@@ -308,7 +300,7 @@
                     <v-lazy-image
                       id="reveal6"
                       class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/13.jpg"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/10.jpg"
                     />
                   </div>
                   <div class="col-md-4 col-12 p-4">
@@ -316,7 +308,7 @@
                     <v-lazy-image
                       id="reveal7"
                       class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/20.jpg"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/13.jpg"
                     />
                   </div>
                   <div class="col-md-4 col-12 p-4">
@@ -324,7 +316,7 @@
                     <v-lazy-image
                       id="reveal8"
                       class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/23.jpg"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/20.jpg"
                     />
                   </div>
                   <div class="col-md-4 col-12 p-4">
@@ -332,11 +324,19 @@
                     <v-lazy-image
                       id="reveal9"
                       class="img-fluid rounded-2 shadow"
+                      src="https://annissa-handra.my.id/assets/img/gallery2/23.jpg"
+                    />
+                  </div>
+                  <div class="col-md-4 col-12 p-4">
+                    <div id="trigger10"></div>
+                    <v-lazy-image
+                      id="reveal10"
+                      class="img-fluid rounded-2 shadow"
                       src="https://annissa-handra.my.id/assets/img/gallery2/24.jpg"
                     />
                   </div>
                 </div>
-                <div class="col-12 mb-5">
+                <div class="col-12 my-4">
                   <a
                     href="javascript:;"
                     class="btn rounded-pill moments-btn"
@@ -351,6 +351,140 @@
         <section id="sec4">
           <div class="container">
             <div class="ins-container">
+              <div class="pb-4">
+                <h1 class="sunflower">Share Love</h1>
+                <h5>
+                  Your prayers &amp; blessings at our wedding is enough as a
+                  gift, but if you want to give more, we are happy to receive it
+                  and it will complement our happiness even more
+                </h5>
+              </div>
+              <div id="trigger2"></div>
+              <div id="reveal2" class="row justify-content-center">
+                <div class="col-md-4 col-12 my-3">
+                  <div class="px-3 py-4 banks-bg position-relative">
+                    <v-lazy-image
+                      class="img-fluid pb-4 banks"
+                      src="https://annissa-handra.my.id/assets/img/bca.png"
+                    />
+                    <p class="fs-5">
+                      {{ bca }} <br />
+                      A.n. Annissa Fitri Yonita
+                    </p>
+                    <input type="hidden" id="bca-acc" :value="bca" />
+                    <Transition name="fade">
+                      <div
+                        v-if="notificationBca"
+                        class="notification-container"
+                      >
+                        <div class="notification">
+                          <small>Rekening BCA copied to clipboard</small>
+                        </div>
+                      </div>
+                    </Transition>
+                    <div class="mt-4">
+                      <a
+                        class="btn rounded-pill accounts-btn"
+                        @click.stop.prevent="copyBca"
+                        ><i class="bi bi-clipboard"></i>&nbsp;Copy</a
+                      >
+                    </div>
+                    <div class="mt-3 mb-2">
+                      <a
+                        href="https://wa.me/6282385359319?text=Saya+mengirimkan+kado+pernikahan+melalui+Bank+BCA+senilai+Rp"
+                        class="btn rounded-pill wa-btn"
+                        target="_blank"
+                      >
+                        <i class="bi bi-whatsapp"></i>&nbsp;Confirm
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-3">
+                  <div class="px-3 py-4 banks-bg position-relative">
+                    <v-lazy-image
+                      class="img-fluid pb-4 banks"
+                      src="https://annissa-handra.my.id/assets/img/bsi.png"
+                    />
+                    <p class="fs-5">
+                      {{ bsi }} <br />
+                      A.n. Annisa Fitri Yonita
+                    </p>
+                    <input type="hidden" id="bsi-acc" :value="bsi" />
+                    <Transition name="fade">
+                      <div
+                        v-if="notificationBsi"
+                        class="notification-container"
+                      >
+                        <div class="notification">
+                          <small>Rekening BSI copied to clipboard</small>
+                        </div>
+                      </div>
+                    </Transition>
+                    <div class="mt-4">
+                      <a
+                        class="btn rounded-pill accounts-btn"
+                        @click.stop.prevent="copyBsi"
+                        ><i class="bi bi-clipboard"></i>&nbsp;Copy</a
+                      >
+                    </div>
+                    <div class="mt-3 mb-2">
+                      <a
+                        href="https://wa.me/6282385359319?text=Saya+mengirimkan+kado+pernikahan+melalui+Bank+BSI+senilai+Rp"
+                        class="btn rounded-pill wa-btn"
+                        target="_blank"
+                      >
+                        <i class="bi bi-whatsapp"></i>&nbsp;Confirm
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 my-3">
+                  <div class="px-3 py-4 banks-bg position-relative">
+                    <v-lazy-image
+                      class="img-fluid pb-4 banks"
+                      src="https://annissa-handra.my.id/assets/img/bni.png"
+                    />
+                    <p class="fs-5">
+                      {{ bni }} <br />
+                      A.n. Annissa Fitri Yonita
+                    </p>
+                    <input type="hidden" id="bni-acc" :value="bni" />
+                    <Transition name="fade">
+                      <div
+                        v-if="notificationBni"
+                        class="notification-container"
+                      >
+                        <div class="notification">
+                          <small>Rekening BNI copied to clipboard</small>
+                        </div>
+                      </div>
+                    </Transition>
+                    <div class="mt-4">
+                      <a
+                        class="btn rounded-pill accounts-btn"
+                        @click.stop.prevent="copyBni"
+                        ><i class="bi bi-clipboard"></i>&nbsp;Copy</a
+                      >
+                    </div>
+                    <div class="mt-3 mb-2">
+                      <a
+                        href="https://wa.me/6282385359319?text=Saya+mengirimkan+kado+pernikahan+melalui+Bank+BNI+senilai+Rp"
+                        class="btn rounded-pill wa-btn"
+                        target="_blank"
+                      >
+                        <i class="bi bi-whatsapp"></i>&nbsp;Confirm
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="sec5">
+          <div class="container">
+            <div class="ins-container">
               <div class="pb-5">
                 <h5>This event will be held using</h5>
                 <h1 class="sunflower">Health Protocol</h1>
@@ -359,8 +493,8 @@
                   recommendations
                 </h5>
               </div>
-              <div id="trigger2"></div>
-              <div id="reveal2" class="row protocols">
+              <div id="trigger3"></div>
+              <div id="reveal3" class="row protocols">
                 <div class="col-md-4 col-6 p-4">
                   <v-lazy-image
                     class="img-fluid"
@@ -407,11 +541,11 @@
             </div>
           </div>
         </section>
-        <section id="sec5" class="text-white">
+        <section id="sec6" class="text-white">
           <div class="container">
             <div class="ins-container">
-              <div id="trigger3"></div>
-              <div id="reveal3" class="row align-items-center">
+              <div id="trigger4"></div>
+              <div id="reveal4" class="row align-items-center">
                 <h1 class="sunflower">Thank You</h1>
                 <h5>
                   Your presence at our wedding <br />
@@ -462,7 +596,14 @@ export default {
       scene7: null,
       scene8: null,
       scene9: null,
+      scene10: null,
       showed: false,
+      bca: "6290444151",
+      bsi: "7275630590",
+      bni: "1228653444",
+      notificationBca: false,
+      notificationBsi: false,
+      notificationBni: false,
     };
   },
   methods: {
@@ -528,6 +669,12 @@ export default {
         triggerHook: 0.9,
       })
         .setClassToggle("#reveal9", "visible")
+        .addTo(this.controller);
+      this.scene10 = new ScrollMagic.Scene({
+        triggerElement: "#trigger10",
+        triggerHook: 0.9,
+      })
+        .setClassToggle("#reveal10", "visible")
         .addTo(this.controller);
     },
     openFancyBox() {
@@ -646,6 +793,66 @@ export default {
         },
       ]);
     },
+    copyBca() {
+      let textToCopy = document.querySelector("#bca-acc");
+      textToCopy.setAttribute("type", "text");
+
+      textToCopy.select();
+
+      this.notificationBca = true;
+
+      try {
+        let successful = document.execCommand("copy");
+        setTimeout(() => {
+          this.notificationBca = false;
+        }, 1200);
+      } catch (e) {
+        console.log(e);
+      }
+
+      textToCopy.setAttribute("type", "hidden");
+      window.getSelection().removeAllRanges();
+    },
+    copyBsi() {
+      let textToCopy = document.querySelector("#bsi-acc");
+      textToCopy.setAttribute("type", "text");
+
+      textToCopy.select();
+
+      this.notificationBsi = true;
+
+      try {
+        let successful = document.execCommand("copy");
+        setTimeout(() => {
+          this.notificationBsi = false;
+        }, 1200);
+      } catch (e) {
+        console.log(e);
+      }
+
+      textToCopy.setAttribute("type", "hidden");
+      window.getSelection().removeAllRanges();
+    },
+    copyBni() {
+      let textToCopy = document.querySelector("#bni-acc");
+      textToCopy.setAttribute("type", "text");
+
+      textToCopy.select();
+
+      this.notificationBni = true;
+
+      try {
+        let successful = document.execCommand("copy");
+        setTimeout(() => {
+          this.notificationBni = false;
+        }, 1200);
+      } catch (e) {
+        console.log(e);
+      }
+
+      textToCopy.setAttribute("type", "hidden");
+      window.getSelection().removeAllRanges();
+    },
   },
   mounted() {
     this.scrollMagicTrig();
@@ -672,6 +879,33 @@ export default {
   opacity: 0;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.notification-container {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  width: 100%;
+  padding: 0 2em;
+}
+
+.notification {
+  background: #615247ab;
+  padding: 0.5em;
+  border-radius: 1em;
+  opacity: 1;
+  color: #fff;
+  font-weight: 900;
+}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -695,7 +929,8 @@ export default {
   background-size: cover;
 }
 
-#sec3 {
+#sec3,
+#sec5 {
   background-color: #d1d0d0;
   background: #d1d0d0;
   background-image: #d1d0d0;
@@ -716,14 +951,14 @@ export default {
   background-image: #bbb2ab;
 }
 
-#sec5 {
+#sec6 {
   background-color: #bbb2ab;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://annissa-handra.my.id/assets/img/foot.webp") center no-repeat;
   background-image: #bbb2ab;
   background-size: cover;
   min-height: 75vh;
-  padding-top: 1.5em;
+  padding-top: 6.5em;
 }
 
 .overlay-content {
@@ -842,20 +1077,29 @@ td {
 }
 
 #reveal1,
-#reveal2,
 #reveal3,
-#reveal4,
-#reveal5,
-#reveal6,
-#reveal7,
-#reveal8,
-#reveal9 {
+#reveal4 {
   opacity: 0;
   -webkit-transform: translateY(10%);
   -moz-transform: translateY(10%);
   -ms-transform: translateY(10%);
   -o-transform: translateY(10%);
   transform: translateY(10%);
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+#reveal2,
+#reveal5,
+#reveal6,
+#reveal7,
+#reveal8,
+#reveal9,
+#reveal10 {
+  opacity: 0;
   -webkit-transition: all 0.8s ease-in-out;
   -moz-transition: all 0.8s ease-in-out;
   -ms-transition: all 0.8s ease-in-out;
@@ -871,7 +1115,8 @@ td {
 #reveal6.visible,
 #reveal7.visible,
 #reveal8.visible,
-#reveal9.visible {
+#reveal9.visible,
+#reveal10.visible {
   opacity: 1;
   -webkit-transform: none;
   -moz-transform: none;
@@ -889,7 +1134,9 @@ td {
 } */
 
 a.loc-btn,
-a.moments-btn {
+a.moments-btn,
+a.accounts-btn,
+a.wa-btn {
   text-decoration: none !important;
   background: #7c6a5e;
   padding: 0.3em 1.5em;
@@ -898,26 +1145,30 @@ a.moments-btn {
   color: #ffffff;
   font-size: 1em;
   border: 0;
-  margin-top: 2em;
   z-index: 1;
   display: inline-block;
 }
 
 a.loc-btn:hover,
-a.moments-btn:hover {
+a.moments-btn:hover,
+a.accounts-btn:hover,
+a.wa-btn:hover {
   box-shadow: 0 0 10px #7c6a5e;
 }
 
+.banks {
+  width: 37%;
+}
+
+.banks-bg {
+  background: #d1d0d0;
+  border-radius: 2em;
+}
+
 @media (max-width: 1400px) {
-  #sec4 {
-    padding-top: 0.5em;
-  }
 }
 
 @media (max-width: 1200px) {
-  #sec4 {
-    padding-top: 0.5em;
-  }
 }
 
 @media (max-width: 992px) {
@@ -931,10 +1182,6 @@ a.moments-btn:hover {
 
   .titleset {
     background-position-y: -100px;
-  }
-
-  #sec4 {
-    padding-top: 8em;
   }
 }
 
@@ -968,7 +1215,7 @@ a.moments-btn:hover {
     background-position-y: 0px;
   }
 
-  #sec4 {
+  #sec6 {
     padding-top: 0.5em;
   }
 
