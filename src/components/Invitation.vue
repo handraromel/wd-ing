@@ -289,51 +289,57 @@
                 <div class="row">
                   <div class="col-md-4 col-12 p-4">
                     <div id="trigger5"></div>
-                    <v-lazy-image
-                      id="reveal5"
-                      class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/9.jpg"
-                    />
+                    <div id="reveal5">
+                      <v-lazy-image
+                        class="img-fluid rounded-2 shadow"
+                        src="https://annissa-handra.my.id/assets/img/gallery2/9.jpg"
+                      />
+                    </div>
                   </div>
                   <div class="col-md-4 col-12 p-4">
                     <div id="trigger6"></div>
-                    <v-lazy-image
-                      id="reveal6"
-                      class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/10.jpg"
-                    />
+                    <div id="reveal6">
+                      <v-lazy-image
+                        class="img-fluid rounded-2 shadow"
+                        src="https://annissa-handra.my.id/assets/img/gallery2/10.jpg"
+                      />
+                    </div>
                   </div>
                   <div class="col-md-4 col-12 p-4">
                     <div id="trigger7"></div>
-                    <v-lazy-image
-                      id="reveal7"
-                      class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/13.jpg"
-                    />
+                    <div id="reveal7">
+                      <v-lazy-image
+                        class="img-fluid rounded-2 shadow"
+                        src="https://annissa-handra.my.id/assets/img/gallery2/13.jpg"
+                      />
+                    </div>
                   </div>
                   <div class="col-md-4 col-12 p-4">
                     <div id="trigger8"></div>
-                    <v-lazy-image
-                      id="reveal8"
-                      class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/20.jpg"
-                    />
+                    <div id="reveal8">
+                      <v-lazy-image
+                        class="img-fluid rounded-2 shadow"
+                        src="https://annissa-handra.my.id/assets/img/gallery2/20.jpg"
+                      />
+                    </div>
                   </div>
                   <div class="col-md-4 col-12 p-4">
                     <div id="trigger9"></div>
-                    <v-lazy-image
-                      id="reveal9"
-                      class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/23.jpg"
-                    />
+                    <div id="reveal9">
+                      <v-lazy-image
+                        class="img-fluid rounded-2 shadow"
+                        src="https://annissa-handra.my.id/assets/img/gallery2/23.jpg"
+                      />
+                    </div>
                   </div>
                   <div class="col-md-4 col-12 p-4">
                     <div id="trigger10"></div>
-                    <v-lazy-image
-                      id="reveal10"
-                      class="img-fluid rounded-2 shadow"
-                      src="https://annissa-handra.my.id/assets/img/gallery2/24.jpg"
-                    />
+                    <div id="reveal10">
+                      <v-lazy-image
+                        class="img-fluid rounded-2 shadow"
+                        src="https://annissa-handra.my.id/assets/img/gallery2/24.jpg"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div class="col-12 my-4">
@@ -624,7 +630,7 @@ export default {
         .addTo(this.controller);
       this.scene2 = new ScrollMagic.Scene({
         triggerElement: "#trigger2",
-        triggerHook: 0.9,
+        triggerHook: 0.7,
       })
         .setClassToggle("#reveal2", "visible")
         .addTo(this.controller);
